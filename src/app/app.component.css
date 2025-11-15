@@ -1,0 +1,22 @@
+.sidebar {
+  transition: all 0.3s ease;
+  background-color: #343a40;
+}
+
+/* .navbar-nav .nav-link.active {
+  font-weight: 600;
+  color: #ffc107 !important;
+} */
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    display: none;
+  }
+
+  
+}
+/* @media (min-width: 601px) {
+  .small-navbar {
+    display: none;
+  }
+} */
