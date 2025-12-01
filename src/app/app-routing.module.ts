@@ -6,21 +6,22 @@ import { ClassManagementComponent } from './class-management/class-management.co
 import { AttendanceComponent } from './attendance/attendance.component';
 import { SettingsComponent } from './settings/settings.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MyClassesComponent } from './cardtile-dashboard/my-classes/my-classes.component';
 
-const routes: Routes = [ { path: '', redirectTo: '', pathMatch: 'full' },
-  { path: 'studentmanagement', component: StudManagementComponent },
-  { path: 'teachermanagement', component: TeachManagementComponent },
-  { path: 'classmanagement', component: ClassManagementComponent },
-{path: 'attendance', component: AttendanceComponent},
-{path:'reports', component:AttendanceComponent},
-{path:'settings', component:SettingsComponent},
-{path:'dashboard', component:DashboardComponent}];
+const routes: Routes = [{ path: '', redirectTo: '', pathMatch: 'full' },
+{ path: 'studentmanagement', component: StudManagementComponent },
+{ path: 'teachermanagement', component: TeachManagementComponent },
+{ path: 'classmanagement', component: ClassManagementComponent },
+{ path: 'attendance', component: AttendanceComponent },
+{ path: 'reports', component: AttendanceComponent },
+{ path: 'settings', component: SettingsComponent },
+{ path: 'dashboard', component: DashboardComponent },
+{ path: 'my-class', component: MyClassesComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
-  
- }
- 
+
+}

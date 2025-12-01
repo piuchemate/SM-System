@@ -11,6 +11,9 @@ import { ReportsComponent } from './reports/reports.component';
 import { SettingsComponent } from './settings/settings.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { CardTileComponent } from './card-tile/card-tile.component';
+import { CardtileDashboardComponent } from './cardtile-dashboard/cardtile-dashboard.component';
+import { MyClassesComponent } from './cardtile-dashboard/my-classes/my-classes.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
     ReportsComponent,
     SettingsComponent,
     DashboardComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    CardTileComponent,
+    CardtileDashboardComponent,
+    MyClassesComponent
   ],
   imports: [
     BrowserModule,

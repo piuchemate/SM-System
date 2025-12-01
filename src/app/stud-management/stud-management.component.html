@@ -1,1 +1,17 @@
-<p>stud-management works!</p>
+
+<div class="dashboard-container">
+
+  <h4>{{ role }}</h4>
+  <h1>{{ welcomeText }}</h1>
+  <p>{{ description }}</p>
+
+  <div class="tile-container">
+    <app-card-tile
+      *ngFor="let t of tiles"
+      [icon]="t.icon"
+      [title]="t.title"
+      [subtitle]="t.subtitle">
+    </app-card-tile>
+  </div>
+
+</div>
