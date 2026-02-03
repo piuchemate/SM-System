@@ -9,12 +9,13 @@ import { SettingsComponent } from './settings/settings.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ClassStudComponent } from './class-management/class-stud/class-stud.component';
 import { ClassTeachComponent } from './class-management/class-teach/class-teach.component';
-
+import { CardTileComponent } from './card-tile/card-tile.component';
 const routes: Routes = [
   {
     path: '',
     component: DashboardComponent, // layout
     children: [
+      { path: '', component: CardTileComponent }, // <-- default child view
       { path: 'dashboard', redirectTo: '', pathMatch: 'full' },
       { path: 'studentmanagement', component: StudManagementComponent },
       { path: 'teachermanagement', component: TeachManagementComponent },
