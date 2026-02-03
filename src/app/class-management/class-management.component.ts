@@ -15,12 +15,14 @@ export class ClassManagementComponent {
     {
       icon: 'assets/my-classes',
       title: 'Student Management',
-      subtitle: 'Admissions, records'
+      subtitle: 'Admissions, records',
+      link: '/class-stud'
     },
     {
       icon: 'assets/icons/list.png',
       title: 'Teacher Management',
-      subtitle: 'Information, schedules'
+      subtitle: 'Information, schedules',
+      link: '/class-teach'
     }
   ];
 }
