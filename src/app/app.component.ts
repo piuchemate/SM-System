@@ -1,15 +1,14 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, NgModule } from '@angular/core';
+import { AppRoutingModule } from "./app-routing.module";
+import { RouterOutlet } from "@angular/router";
+import { StudManagementComponent}  from './stud-management/stud-management.component';
+
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: '<router-outlet></router-outlet>',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'SMSystem';
-  isOpen = false;
-
-  toggleMenu() {
-    this.isOpen = !this.isOpen;
-  }
+  // root now hosts the router outlet; DashboardComponent acts as the layout
 }
